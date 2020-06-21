@@ -1,0 +1,39 @@
+{
+  "name": "dynamic-rendering-lambda-edge",
+  "version": "0.1.0",
+  "bin": {
+    "deployment": "bin/deployment.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "lint": "eslint --ext .js,.ts --fix --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.46.0",
+    "@types/aws-lambda": "^8.10.56",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "aws-cdk": "^1.46.0",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "^1.46.0",
+    "@aws-cdk/aws-lambda": "^1.46.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.46.0",
+    "@aws-cdk/core": "^1.46.0",
+    "axios": "^0.19.2",
+    "source-map-support": "^0.5.19"
+  },
+  "license": "MIT"
+}
