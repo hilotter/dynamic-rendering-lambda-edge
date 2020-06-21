@@ -1,6 +1,6 @@
 # Dynamic Rendering Lambda Edge
 
-![dynamic_rendering](https://github.com/hilotter/dynamic-rendering-api/raw/master/doc/dynamic_rendering_lambda_edge.png)
+![dynamic_rendering](https://github.com/hilotter/dynamic-rendering-lambda-edge/raw/master/doc/dynamic_rendering_lambda_edge.png)
 
 - DynamicRenderingApi is [here](https://github.com/hilotter/dynamic-rendering-api)
 
