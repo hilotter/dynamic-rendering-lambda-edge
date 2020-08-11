@@ -281,10 +281,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@types/aws-lambda@^8.10.56":
-  version "8.10.56"
-  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.56.tgz#24fc61bf628db86412bb4f28da051df4baa532d6"
-  integrity sha512-jaxu5br/KYxhNBNmr2GoVhIUady2zNsvSRCa4kCHW+GcM4ladPhfEyeJkkNMGo/IlVAfpcPYTsSzhYWZoSgZXA==
+"@types/aws-lambda@^8.10.60":
+  version "8.10.60"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.60.tgz#98c620bf45ba0698fc50b1cb7d989ea0c2f29e70"
+  integrity sha512-zce8DXLRcBJ3ZAJBsNGkobIdXb34whTtZaGCaauRaDI9ZfleZk/x9wNeIcyvDy4m5w5SJSCZ3yFo3xreOgWowA==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
