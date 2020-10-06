@@ -35,5 +35,18 @@
     "axios": "^0.20.0",
     "source-map-support": "^0.5.19"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "targets": {
+    "cdk-lambda": {
+      "context": "node",
+      "includeNodeModules": {
+        "aws-sdk": false
+      },
+      "sourceMap": false,
+      "minify": false,
+      "engines": {
+        "node": ">= 12"
+      }
+    }
+  }
 }
