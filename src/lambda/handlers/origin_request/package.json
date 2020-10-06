@@ -7,7 +7,7 @@
     "axios": "^0.19.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.3",
+    "@babel/preset-typescript": "^7.10.4",
     "babel-plugin-transform-inline-environment-variables": "^0.4.3"
   }
 }
