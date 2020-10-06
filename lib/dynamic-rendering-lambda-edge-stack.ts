@@ -41,7 +41,7 @@ export class DynamicRenderingLambdaEdgeStack extends cdk.Stack {
         description: `Generated on: ${currentDate}`,
         runtime: lambda.Runtime.NODEJS_12_X,
         timeout: cdk.Duration.seconds(30),
-        containerEnvironment: {
+        parcelEnvironment: {
           NODE_ENV: 'production',
           DYNAMIC_RENDERING_API_URL: process.env.DYNAMIC_RENDERING_API_URL || '',
           DYNAMIC_RENDERING_API_KEY: process.env.DYNAMIC_RENDERING_API_KEY || '',
