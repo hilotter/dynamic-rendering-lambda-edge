@@ -10,3 +10,5 @@ cdk.out
 
 .cache
 .DS_Store
+
+.parcel-cache
