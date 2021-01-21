@@ -4,10 +4,6 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {
-    "@babel/preset-typescript": "^7.10.4",
-    "babel-plugin-transform-inline-environment-variables": "^0.4.3"
+    "axios": "^0.21.1"
   }
 }

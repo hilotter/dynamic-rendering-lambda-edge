@@ -31,7 +31,7 @@ export const handler = async (event: CloudFrontRequestEvent, _context: Context, 
     const targetUrl = `https://${host}${request.uri}`
 
     // Note: Lambda@Edge can not use environment variables
-    // Convert to inline string using transform-inline-environment-variables (.babelrc)
+    // Convert to inline string
     const dynamicRenderingApi = process.env.DYNAMIC_RENDERING_API_URL
     const dynamicRenderingApiKey = process.env.DYNAMIC_RENDERING_API_KEY
 
