@@ -42,10 +42,12 @@ export class DynamicRenderingLambdaEdgeStack extends cdk.Stack {
         runtime: lambda.Runtime.NODEJS_12_X,
         timeout: cdk.Duration.seconds(30),
         bundling: {
-          environment: {
-            NODE_ENV: 'production',
-            DYNAMIC_RENDERING_API_URL: process.env.DYNAMIC_RENDERING_API_URL || '',
-            DYNAMIC_RENDERING_API_KEY: process.env.DYNAMIC_RENDERING_API_KEY || '',
+          sourceMap: true,
+          define: {
+            // https://esbuild.github.io/api/#defines
+            // https://github.com/aws/aws-cdk/blob/v1.85.0/packages/@aws-cdk/aws-lambda-nodejs/lib/bundling.ts#L151
+            'process.env.DYNAMIC_RENDERING_API_URL': `\\"${process.env.DYNAMIC_RENDERING_API_URL || ''}\\"`,
+            'process.env.DYNAMIC_RENDERING_API_KEY': `\\"${process.env.DYNAMIC_RENDERING_API_KEY || ''}\\"`,
           },
         },
       }
