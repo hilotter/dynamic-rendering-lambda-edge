@@ -23,6 +23,12 @@ export const handler = async (event: CloudFrontRequestEvent, _context: Context, 
   request.headers["host"] = [{ key: "host", value: s3host }]
 
   if (!headers[dynamicRenderHeaderName.toLowerCase()]) {
+    const currentUri = request.uri
+    if (currentUri.indexOf('.') !== -1) {
+      return callback(null, request)
+    }
+
+    request.uri = '/index.html'
     return callback(null, request)
   }
 
