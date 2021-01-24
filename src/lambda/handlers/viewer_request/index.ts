@@ -11,6 +11,7 @@ export const handler = async (event: CloudFrontRequestEvent, _context: Context, 
     "Twitterbot",
     "bingbot",
     "msnbot",
+    "Slackbot-LinkExpanding",
   ];
 
   const isCrawler = crawlers.some(c => {
