@@ -127,12 +127,6 @@ export class DynamicRenderingLambdaEdgeStack extends cdk.Stack {
             errorCachingMinTtl: 300,
             responseCode: 200,
             responsePagePath: '/index.html',
-          },
-          {
-            errorCode: 404,
-            errorCachingMinTtl: 300,
-            responseCode: 200,
-            responsePagePath: '/index.html',
           }
         ],
         viewerCertificate: cloudfront.ViewerCertificate.fromAcmCertificate(
